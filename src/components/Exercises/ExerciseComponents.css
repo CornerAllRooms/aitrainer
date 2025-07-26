@@ -1,0 +1,86 @@
+/* Set Counter Styles */
+.set-counter {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.current-set {
+  font-weight: bold;
+  color: var(--exercise-active);
+}
+
+.total-sets {
+  opacity: 0.8;
+}
+
+.set-label {
+  margin-left: 8px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rest-indicator {
+  position: absolute;
+  top: -12px;
+  right: -30px;
+  background: var(--exercise-rest);
+  color: black;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/* Rest Timer Styles */
+.rest-timer {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.timer-display {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--exercise-rest);
+  font-family: monospace;
+}
+
+.timer-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+/* Exercise-specific variables */
+:root {
+  --exercise-active: #4CAF50;
+  --exercise-rest: #FFC107;
+}
+.exercise-progress {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.muscle-targets {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 8px 0;
+}
+
+.current-stats {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 0.8rem;
+}
+
+.current-stats span {
+  background: rgba(0,0,0,0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+}

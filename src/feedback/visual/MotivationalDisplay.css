@@ -1,0 +1,61 @@
+.motivational-display {
+  position: fixed;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 8px;
+  z-index: 1000;
+  pointer-events: none;
+  animation: fadeInOut 2.5s ease-in-out;
+}
+
+.neon-blue-glow {
+  color: #04d9ff;
+  text-shadow: 
+    0 0 5px #04d9ff,
+    0 0 10px #04d9ff,
+    0 0 20px rgba(4, 217, 255, 0.8);
+  background: rgba(10, 25, 47, 0.85);
+  border: 1px solid #04d9ff;
+  box-shadow: 
+    0 0 10px rgba(4, 217, 255, 0.6),
+    0 0 20px rgba(4, 217, 255, 0.3) inset;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  20% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  80% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+}
+
+/* Additional effects for rep completion */
+.rep-complete-message {
+  font-size: 1.8rem;
+  text-shadow: 
+    0 0 10px #04d9ff,
+    0 0 20px #04d9ff,
+    0 0 30px rgba(4, 217, 255, 0.8);
+  animation: pulseGlow 1s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  from {
+    text-shadow: 
+      0 0 5px #04d9ff,
+      0 0 10px #04d9ff;
+    box-shadow: 
+      0 0 10px rgba(4, 217, 255, 0.6);
+  }
+  to {
+    text-shadow: 
+      0 0 15px #04d9ff,
+      0 0 30px #04d9ff;
+    box-shadow: 
+      0 0 20px rgba(4, 217, 255, 0.9);
+  }
+}

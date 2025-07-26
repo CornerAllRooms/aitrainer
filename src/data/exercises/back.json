@@ -1,0 +1,794 @@
+{
+  "$schema": "./exercise.schema.json",
+  "metadata": {
+    "version": "2.2.0",
+    "lastModified": "2023-11-21T10:30:00Z",
+    "wslCompatible": true
+  },
+  "muscleGroup": "back",
+  "exercises": [
+    {
+      "id": "dumbbell-rows",
+      "name": "Dumbbell Rows",
+      "difficulty": "intermediate",
+      "trackedJoints": ["left_shoulder", "right_shoulder", "left_elbow", "right_elbow", "left_hip", "right_hip"],
+      "validationRules": {
+        "elbowAngle": { "min": 70, "max": 120 },
+        "spineAlignment": { "threshold": 0.9 }
+      },
+      "steps": [
+        {
+          "phase": "setup",
+          "targetAngles": {
+            "shoulderElbow": 180,
+            "spineHip": 170
+          }
+        },
+        {
+          "phase": "pull",
+          "targetAngles": {
+            "shoulderElbow": 90,
+            "spineHip": 170
+          }
+        }
+      ],
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/back_dumbbell_rows.bin"
+      }
+    },
+    {
+      "id": "barbell-rows",
+      "name": "Barbell Rows",
+      "difficulty": "advanced",
+      "trackedJoints": ["left_shoulder", "right_shoulder", "left_elbow", "right_elbow", "left_hip", "right_hip"],
+      "validationRules": {
+        "hipAngle": { "min": 135, "max": 170 },
+        "barPath": { "maxDeviation": 0.1 }
+      },
+      "feedback": {
+        "audio": {
+          "correct": "/feedback/audio/general/keep-trying.mp3",
+          "incorrect": "/feedback/audio/general/better-position.mp3",
+          "perfect": "/feedback/audio/general/perfect.mp3"
+        },
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/back_barbell_rows.bin"
+      }
+    },
+    {
+      "id": "seated-dumbbell-rows",
+      "name": "Seated Dumbbell Rows",
+      "difficulty": "beginner",
+      "trackedJoints": ["left_shoulder", "right_shoulder", "left_elbow", "right_elbow", "left_hip", "right_hip"],
+      "validationRules": {
+        "torsoAngle": { "min": 30, "max": 60 },
+        "elbowPath": { "consistencyThreshold": 0.8 }
+      },
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/back_seated_rows.bin"
+      }
+    },
+    {
+      "id": "chin-up-pull-ups",
+      "name": "Chin Up Pull-Ups",
+      "difficulty": "intermediate",
+      "trackedJoints": ["left_wrist", "right_wrist", "left_elbow", "right_elbow", "left_shoulder", "right_shoulder"],
+      "validationRules": {
+        "chinHeight": { "min": 0.9 },
+        "shoulderEngagement": { "minActivation": 0.7 }
+      },
+      "feedback": {
+        "audio": {
+          "correct": "/feedback/audio/general/keep-trying.mp3",
+          "incorrect": "/feedback/audio/general/better-position.mp3",
+          "perfect": "/feedback/audio/general/perfect.mp3"
+        },
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/back_chin_ups.bin"
+      }
+    },
+    {
+      "id": "open-butterfly",
+      "name": "Open Butterfly",
+      "difficulty": "intermediate",
+      "trackedJoints": ["left_shoulder", "right_shoulder", "left_elbow", "right_elbow", "left_wrist", "right_wrist"],
+      "validationRules": {
+        "shoulderRotation": { "min": 45, "max": 90 },
+        "elbowAngle": { "min": 120, "max": 150 }
+      },
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/back_butterfly.bin"
+      }
+    },
+    {
+      "id": "lateral-russian-roulette",
+      "name": "Lateral Russian Roulette",
+      "difficulty": "advanced",
+      "trackedJoints": ["left_shoulder", "right_shoulder", "left_elbow", "right_elbow", "left_hip", "right_hip"],
+      "validationRules": {
+        "torsoRotation": { "min": 30, "max": 60 },
+        "hipStability": { "maxVariation": 5 }
+      },
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/back_russian_roulette.bin"
+      }
+    },
+    {
+      "id": "deadlifts",
+      "name": "Deadlifts",
+      "difficulty": "advanced",
+      "trackedJoints": ["left_shoulder", "right_shoulder", "left_hip", "right_hip", "left_knee", "right_knee"],
+      "validationRules": {
+        "backAngle": { "min": 150, "max": 180 },
+        "barPath": { "maxDeviation": 0.05 }
+      },
+      "feedback": {
+        "audio": {
+          "correct": "/feedback/audio/general/keep-trying.mp3",
+          "incorrect": "/feedback/audio/general/better-position.mp3",
+          "perfect": "/feedback/audio/general/perfect.mp3"
+        },
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/back_deadlifts.bin"
+      }
+    },
+    {
+      "id": "pull-ups",
+      "name": "Pull-Ups",
+      "difficulty": "intermediate",
+      "trackedJoints": ["left_wrist", "right_wrist", "left_elbow", "right_elbow", "left_shoulder", "right_shoulder"],
+      "validationRules": {
+        "chinHeight": { "min": 0.95 },
+        "shoulderActivation": { "min": 0.8 }
+      },
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/back_pull_ups.bin"
+      }
+    },
+    {
+      "id": "face-pulls",
+      "name": "Face Pulls",
+      "difficulty": "beginner",
+      "trackedJoints": ["left_shoulder", "right_shoulder", "left_elbow", "right_elbow", "left_wrist", "right_wrist"],
+      "validationRules": {
+        "elbowHeight": { "min": 0.8, "max": 1.0 },
+        "externalRotation": { "min": 30 }
+      },
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/back_face_pulls.bin"
+      }
+    },
+    {
+      "id": "t-bar-rows",
+      "name": "T-Bar Rows",
+      "difficulty": "advanced",
+      "trackedJoints": ["left_shoulder", "right_shoulder", "left_elbow", "right_elbow", "left_hip", "right_hip"],
+      "validationRules": {
+        "torsoAngle": { "min": 45, "max": 60 },
+        "barPath": { "consistencyThreshold": 0.85 }
+      },
+      "feedback": {
+        "audio": {
+          "correct": "/feedback/audio/general/keep-trying.mp3",
+          "incorrect": "/feedback/audio/general/better-position.mp3",
+          "perfect": "/feedback/audio/general/perfect.mp3"
+        },
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/back_tbar_rows.bin"
+      }
+    }
+  ],
+  "feedbackTemplates": {
+    "positive": [
+      "Excellent back engagement!",
+      "Perfect scapular retraction!",
+      "Great mind-muscle connection!"
+    ],
+    "corrective": [
+      "Keep your spine neutral",
+      "Initiate the movement with your back",
+      "Control the eccentric phase"
+    ],
+    "warning": [
+      "Reduce weight to maintain form",
+      "Avoid rounding your shoulders",
+      "Maintain core bracing"
+    ]
+  }
+}

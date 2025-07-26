@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+public/audio/tts/
+
+# Environment files
+.env
+google-tts-key.json
+
+# Build files
+dist/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# WSL temporary files
+*.swp

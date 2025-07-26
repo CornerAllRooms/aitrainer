@@ -1,0 +1,170 @@
+[
+  {
+    "type": "directory",
+    "path": "."
+  },
+  {
+    "type": "directory",
+    "path": "./.vscode"
+  },
+  {
+    "type": "directory",
+    "path": "./public"
+  },
+  {
+    "type": "directory",
+    "path": "./public/api"
+  },
+  {
+    "type": "directory",
+    "path": "./public/api/progress"
+  },
+  {
+    "type": "directory",
+    "path": "./public/my-login-backend"
+  },
+  {
+    "type": "directory",
+    "path": "./public/my-login-backend/models"
+  },
+  {
+    "type": "directory",
+    "path": "./public/wasm"
+  },
+  {
+    "type": "directory",
+    "path": "./src"
+  },
+  {
+    "type": "directory",
+    "path": "./src/components"
+  },
+  {
+    "type": "directory",
+    "path": "./src/components/BodyPartSelector"
+  },
+  {
+    "type": "directory",
+    "path": "./src/components/Camera"
+  },
+  {
+    "type": "directory",
+    "path": "./src/components/Exercises"
+  },
+  {
+    "type": "directory",
+    "path": "./src/components/Skeleton"
+  },
+  {
+    "type": "directory",
+    "path": "./src/config"
+  },
+  {
+    "type": "directory",
+    "path": "./src/data"
+  },
+  {
+    "type": "directory",
+    "path": "./src/data/assets"
+  },
+  {
+    "type": "directory",
+    "path": "./src/data/exercises"
+  },
+  {
+    "type": "directory",
+    "path": "./src/feedback"
+  },
+  {
+    "type": "directory",
+    "path": "./src/feedback/audio"
+  },
+  {
+    "type": "directory",
+    "path": "./src/feedback/visual"
+  },
+  {
+    "type": "directory",
+    "path": "./src/flows"
+  },
+  {
+    "type": "directory",
+    "path": "./src/flows/body-part-selection"
+  },
+  {
+    "type": "directory",
+    "path": "./src/flows/exercise-execution"
+  },
+  {
+    "type": "directory",
+    "path": "./src/flows/post-workout"
+  },
+  {
+    "type": "directory",
+    "path": "./src/flows/user-onboarding"
+  },
+  {
+    "type": "directory",
+    "path": "./src/libs"
+  },
+  {
+    "type": "directory",
+    "path": "./src/libs/wasm"
+  },
+  {
+    "type": "directory",
+    "path": "./src/models"
+  },
+  {
+    "type": "directory",
+    "path": "./src/modules"
+  },
+  {
+    "type": "directory",
+    "path": "./src/modules/exercises"
+  },
+  {
+    "type": "directory",
+    "path": "./src/services"
+  },
+  {
+    "type": "directory",
+    "path": "./src/services/exercise"
+  },
+  {
+    "type": "directory",
+    "path": "./src/state"
+  },
+  {
+    "type": "directory",
+    "path": "./src/tracking"
+  },
+  {
+    "type": "directory",
+    "path": "./src/tracking/pose"
+  },
+  {
+    "type": "directory",
+    "path": "./src/utils"
+  },
+  {
+    "type": "directory",
+    "path": "./src/utils/math"
+  },
+  {
+    "type": "directory",
+    "path": "./src/workflow"
+  },
+  {
+    "type": "directory",
+    "path": "./src/workflow/session"
+  },
+  {
+    "type": "directory",
+    "path": "./wasm"
+  },
+  {
+    "type": "directory",
+    "path": "./wasm/src"
+  }
+]

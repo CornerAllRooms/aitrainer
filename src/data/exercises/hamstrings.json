@@ -1,0 +1,794 @@
+{
+  "$schema": "./exercise.schema.json",
+  "metadata": {
+    "version": "2.5.0",
+    "lastModified": "2023-11-21T16:45:00Z",
+    "wslCompatible": true
+  },
+  "muscleGroup": "hamstrings",
+  "exercises": [
+    {
+      "id": "kettlebell-good-morning",
+      "name": "Kettlebell Good Morning",
+      "difficulty": "intermediate",
+      "trackedJoints": ["left_hip", "right_hip", "left_knee", "right_knee", "left_shoulder", "right_shoulder"],
+      "validationRules": {
+        "hipHinge": { "min": 45, "max": 90 },
+        "kneeAngle": { "min": 170, "max": 180 }
+      },
+      "steps": [
+        {
+          "phase": "start",
+          "targetAngles": {
+            "hip": 180,
+            "knee": 175
+          }
+        },
+        {
+          "phase": "lower",
+          "targetAngles": {
+            "hip": 90,
+            "knee": 175
+          }
+        }
+      ],
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_kb_goodmorning.bin"
+      }
+    },
+    {
+      "id": "romanian-deadlifts",
+      "name": "Romanian Deadlifts",
+      "difficulty": "intermediate",
+      "trackedJoints": ["left_hip", "right_hip", "left_knee", "right_knee", "left_shoulder", "right_shoulder"],
+      "validationRules": {
+        "barPath": { "maxDeviation": 0.1 },
+        "spineAlignment": { "threshold": 0.9 }
+      },
+      "feedback": {
+        "audio": {
+          "correct": "/feedback/audio/general/keep-trying.mp3",
+          "incorrect": "/feedback/audio/general/better-position.mp3",
+          "perfect": "/feedback/audio/general/perfect.mp3"
+        },
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_romanian_deadlift.bin"
+      }
+    },
+    {
+      "id": "hamstring-curls",
+      "name": "Hamstring Curls",
+      "difficulty": "beginner",
+      "trackedJoints": ["left_knee", "right_knee", "left_ankle", "right_ankle"],
+      "validationRules": {
+        "kneeFlexion": { "min": 120, "max": 140 },
+        "tempo": { "lifting": 2, "lowering": 3 }
+      },
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_leg_curl.bin"
+      }
+    },
+    {
+      "id": "glute-ham-raises",
+      "name": "Glute-Ham Raises",
+      "difficulty": "advanced",
+      "trackedJoints": ["left_hip", "right_hip", "left_knee", "right_knee", "left_ankle", "right_ankle"],
+      "validationRules": {
+        "eccentricControl": { "minDuration": 3 },
+        "bodyAlignment": { "threshold": 0.85 }
+      },
+      "feedback": {
+        "audio": {
+          "correct": "/feedback/audio/general/keep-trying.mp3",
+          "incorrect": "/feedback/audio/general/better-position.mp3",
+          "perfect": "/feedback/audio/general/perfect.mp3"
+        },
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_ghr.bin"
+      }
+    },
+    {
+      "id": "single-leg-deadlifts",
+      "name": "Single-Leg Deadlifts",
+      "difficulty": "intermediate",
+      "trackedJoints": ["left_hip", "right_hip", "left_knee", "right_knee", "left_ankle", "right_ankle"],
+      "validationRules": {
+        "balance": { "threshold": 0.8 },
+        "hipHinge": { "min": 30, "max": 60 }
+      },
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_single_leg.bin"
+      }
+    },
+    {
+      "id": "seated-leg-curls",
+      "name": "Seated Leg Curls",
+      "difficulty": "beginner",
+      "trackedJoints": ["left_knee", "right_knee", "left_ankle", "right_ankle"],
+      "validationRules": {
+        "kneeFlexion": { "min": 90, "max": 120 },
+        "thighStability": { "threshold": 0.9 }
+      },
+      "feedback": {
+        "audio": {
+          "correct": "/feedback/audio/general/keep-trying.mp3",
+          "incorrect": "/feedback/audio/general/better-position.mp3",
+          "perfect": "/feedback/audio/general/perfect.mp3"
+        },
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_seated_curl.bin"
+      }
+    },
+    {
+      "id": "nordic-hamstring-curls",
+      "name": "Nordic Hamstring Curls",
+      "difficulty": "advanced",
+      "trackedJoints": ["left_hip", "right_hip", "left_knee", "right_knee"],
+      "validationRules": {
+        "eccentricControl": { "minDuration": 4 },
+        "torsoAngle": { "min": 0, "max": 45 }
+      },
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_nordic.bin"
+      }
+    },
+    {
+      "id": "stiff-leg-deadlifts",
+      "name": "Stiff-Leg Deadlifts",
+      "difficulty": "intermediate",
+      "trackedJoints": ["left_hip", "right_hip", "left_knee", "right_knee", "left_shoulder", "right_shoulder"],
+      "validationRules": {
+        "kneeAngle": { "min": 175, "max": 180 },
+        "hamstringStretch": { "min": 0.8 }
+      },
+      "feedback": {
+        "audio": {
+          "correct": "/feedback/audio/general/keep-trying.mp3",
+          "incorrect": "/feedback/audio/general/better-position.mp3",
+          "perfect": "/feedback/audio/general/perfect.mp3"
+        },
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_stiff_leg.bin"
+      }
+    },
+    {
+      "id": "swiss-ball-hamstring-curls",
+      "name": "Swiss Ball Hamstring Curls",
+      "difficulty": "intermediate",
+      "trackedJoints": ["left_hip", "right_hip", "left_knee", "right_knee", "left_ankle", "right_ankle"],
+      "validationRules": {
+        "hipExtension": { "min": 0.9 },
+        "ballControl": { "threshold": 0.8 }
+      },
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_ball_curl.bin"
+      }
+    },
+    {
+      "id": "reverse-hyperextensions",
+      "name": "Reverse Hyperextensions",
+      "difficulty": "advanced",
+      "trackedJoints": ["left_hip", "right_hip", "left_knee", "right_knee"],
+      "validationRules": {
+        "hipExtension": { "min": 0.95 },
+        "legAlignment": { "maxDeviation": 5 }
+      },
+      {
+  "audio": {
+    "correct": {
+      "type": "google-tts",
+      "variants": [
+        "Good form! Keep going",
+        "Doing great! Continue",
+        "Nice control! Maintain",
+        "Solid effort! Steady",
+        "Well executed! Breathe",
+        "Proper technique! Focus",
+        "Clean movement! Sustain",
+        "On point! Don't stop",
+        "Precise motion! Hold",
+        "Excellent! You've got this",
+        "Tight form! Keep rhythm",
+        "Controlled! Stay strong",
+        "Balanced! Keep flowing",
+        "Stable! Push forward",
+        "Aligned! Keep working",
+        "Smooth! Stay consistent",
+        "Powerful! Maintain pace",
+        "Fluid! Don't relax",
+        "Strong! Keep pressure",
+        "Masterful! Stay locked in"
+      ],
+      "config": {
+        "audioEncoding": "LINEAR16",
+        "effectsProfileId": ["handset-class-device"],
+        "pitch": 0,
+        "speakingRate": 0.89,
+        "voice": {
+          "languageCode": "en-US",
+          "name": "en-US-Chirp3-HD-Zephyr"
+        }
+      }
+    },
+    "incorrect": {
+      "type": "google-tts",
+      "variants": [
+        "Adjust your posture",
+        "Check your alignment",
+        "Modify your stance",
+        "Correct your position",
+        "Improve your form",
+        "Refine your technique",
+        "Tweak your setup",
+        "Fix your posture",
+        "Straighten your back",
+        "Engage your core more",
+        "Level your shoulders",
+        "Align your hips",
+        "Square your feet",
+        "Even your balance",
+        "Center your weight",
+        "Loosen your grip",
+        "Relax your neck",
+        "Tighten your abs",
+        "Lower your shoulders",
+        "Shift your weight"
+      ],
+      "config": { /* Same config as above */ }
+    },
+    "perfect": {
+      "type": "google-tts",
+      "variants": [
+        "Perfect execution!",
+        "Flawless technique!",
+        "Textbook form!",
+        "Competition ready!",
+        "Elite performance!",
+        "Masterclass motion!",
+        "Gold standard!",
+        "Impeccable control!",
+        "Precision defined!",
+        "Artistic movement!",
+        "Surgical precision!",
+        "Robot-level accuracy!",
+        "Olympic quality!",
+        "Pro-level execution!",
+        "Spotless technique!",
+        "100% perfection!",
+        "Showcase example!",
+        "Coaching manual perfect!",
+        "No notes!",
+        "Absolute ideal!"
+      ],
+      "config": { /* Same config */ }
+    }
+  }
+}
+        "visual": {
+          "correct": [0, 255, 0],
+          "incorrect": [255, 0, 0]
+        }
+      },
+      "wslPaths": {
+        "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_reverse_hyper.bin"
+      }
+    }
+  ],
+  "feedbackTemplates": {
+    "positive": [
+      "Excellent hamstring engagement!",
+      "Perfect hip hinge mechanics!",
+      "Great eccentric control!"
+    ],
+    "corrective": [
+      "Maintain neutral spine",
+      "Control the lowering phase",
+      "Squeeze at peak contraction"
+    ],
+    "warning": [
+      "Avoid rounding your back",
+      "Reduce weight to maintain form",
+      "Keep knees aligned"
+    ]
+  }
+}

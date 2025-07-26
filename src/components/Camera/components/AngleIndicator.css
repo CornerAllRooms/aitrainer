@@ -1,0 +1,89 @@
+.angle-indicator {
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.angle-indicator.error {
+  border-left: 3px solid #F44336;
+}
+
+.angle-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.joint-name {
+  text-transform: capitalize;
+}
+
+.angle-value {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.angle-range-bar {
+  height: 20px;
+  background: #333;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+.angle-min, .angle-max, .angle-perfect {
+  position: absolute;
+  top: 22px;
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+.angle-min {
+  left: 0;
+}
+
+.angle-max {
+  right: 0;
+}
+
+.angle-perfect {
+  transform: translateX(-50%);
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.angle-current-marker {
+  position: absolute;
+  top: -5px;
+  width: 6px;
+  height: 30px;
+  background: #4CAF50;
+  border-radius: 3px;
+  transform: translateX(-50%);
+}
+
+.deviation-indicator {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.deviation-bar {
+  height: 5px;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  transition: width 0.2s ease;
+}
+
+.angle-warning {
+  color: #F44336;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  text-align: center;
+}

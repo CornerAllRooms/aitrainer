@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Exercise Schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Path to the schema file"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string" },
+        "lastModified": { "type": "string", "format": "date-time" },
+        "wslCompatible": { "type": "boolean" }
+      },
+      "required": ["version"]
+    },
+    "muscleGroup": {
+      "type": "string",
+      "enum": ["abs", "back", "biceps", "chest", "glutes", "hamstrings", "quads", "shoulders", "triceps"]
+    },
+    "exercises": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "difficulty": {
+            "type": "string",
+            "enum": ["beginner", "intermediate", "advanced", "pro"]
+          },
+          "trackedJoints": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 3
+          },
+          "feedback": {
+            "type": "object",
+            "properties": {
+              "audio": {
+                "type": "object",
+                "properties": {
+                  "correct": { "type": "string" },
+                  "incorrect": { "type": "string" },
+                  "perfect": { "type": "string" }
+                },
+                "required": ["correct", "incorrect", "perfect"]
+              }
+            }
+          },
+          "wslPaths": {
+            "type": "object",
+            "properties": {
+              "model": { "type": "string" }
+            }
+          }
+        },
+        "required": ["id", "name", "trackedJoints"]
+      }
+    }
+  },
+  "required": ["muscleGroup", "exercises"]
+}

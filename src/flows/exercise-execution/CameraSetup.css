@@ -1,0 +1,42 @@
+.camera-setup {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.video-container {
+  position: relative;
+  flex-grow: 1;
+}
+
+.input-video, .output-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.output-canvas {
+  pointer-events: none;
+}
+
+.feedback-panel {
+  height: 200px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.camera-loading, .camera-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.camera-error {
+  color: #ff4444;
+}

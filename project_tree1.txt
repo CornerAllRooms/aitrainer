@@ -1,0 +1,169 @@
+/mnt/c/Users/Molap/Documents/work/AI-Trainer/
+├── .gitignore
+├── .vscode
+│   ├── c_cpp_properties.json
+│   ├── launch.json
+│   └── settings.json
+├── full_project_tree.txt
+├── package-lock.json
+├── package.json
+├── project_tree.txt
+├── project_tree1.txt
+├── public
+│   ├── Auth.php
+│   ├── api
+│   │   └── progress
+│   │       ├── index.php
+│   │       └── save.php
+│   ├── app.css
+│   ├── assets
+│   │   ├── profile.css
+│   │   ├── profile2.avif
+│   │   ├── reset.css
+│   │   └── style.css
+│   ├── bc.html
+│   ├── config.settings
+│   ├── connect.php
+│   ├── google.php
+│   ├── index.jsx
+│   ├── index.php
+│   ├── logout.php
+│   ├── my-login-backend
+│   │   ├── app.js
+│   │   ├── auth-handler.php
+│   │   ├── bootstrap.php
+│   │   ├── index.js
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   └── server.js
+│   ├── profile.php
+│   ├── register.php
+│   ├── reset-password.php
+│   ├── secure_router.php
+│   └── wasm
+│       ├── ai_trainer.d.ts
+│       ├── ai_trainer.js
+│       └── ai_trainer_bg.wasm
+├── simple_tree.txt
+├── src
+│   ├── components
+│   │   ├── BodyPartSelector
+│   │   │   ├── BodyPartSelector.css
+│   │   │   └── BodyPartSelector.jsx
+│   │   ├── Camera
+│   │   │   ├── CameraFeed.jsx
+│   │   │   ├── FeedbackDisplay.jsx
+│   │   │   ├── PoseRenderer.jsx
+│   │   │   ├── components
+│   │   │   └── hooks
+│   │   ├── Exercises
+│   │   │   ├── DemoView.jsx
+│   │   │   ├── ExerciseComponents.css
+│   │   │   ├── ExerciseProgress.jsx
+│   │   │   ├── Exercises.css
+│   │   │   ├── MuscleMap.jsx
+│   │   │   ├── RestTimer.jsx
+│   │   │   ├── SetCounter.jsx
+│   │   │   ├── assets
+│   │   │   ├── components
+│   │   │   └── index.js
+│   │   ├── Skeleton
+│   │   │   ├── ExerciseHUD.jsx
+│   │   │   ├── SkeletonView.jsx
+│   │   │   ├── TendonView.jsx
+│   │   │   ├── assets
+│   │   │   ├── index.js
+│   │   │   └── styles
+│   │   └── WasmTest.jsx
+│   ├── config
+│   ├── data
+│   │   ├── assets
+│   │   │   └── muscles
+│   │   ├── exercises
+│   │   │   ├── abs.json
+│   │   │   ├── back.json
+│   │   │   ├── biceps.json
+│   │   │   ├── calves.json
+│   │   │   ├── chest.json
+│   │   │   ├── glutes.json
+│   │   │   ├── hamstrings.json
+│   │   │   ├── quads.json
+│   │   │   ├── shoulders.json
+│   │   │   └── triceps.json
+│   │   └── muscleGroups.js
+│   ├── feedback
+│   │   ├── FeedbackManager.js
+│   │   ├── audio
+│   │   │   ├── AudioFeedback.js
+│   │   │   └── general
+│   │   ├── motivationalMessages.js
+│   │   └── visual
+│   │       ├── MotivationalDisplay.css
+│   │       ├── MotivationalDisplay.jsx
+│   │       └── audio
+│   ├── flows
+│   │   ├── body-part-selection
+│   │   │   ├── DifficultyTabs.js
+│   │   │   ├── ExercisePreview.js
+│   │   │   └── MuscleGrid.js
+│   │   ├── exercise-execution
+│   │   │   ├── CameraSetup.css
+│   │   │   ├── CameraSetup.js
+│   │   │   ├── ExerciseExecution.jsx
+│   │   │   ├── RealTimeFeedback.js
+│   │   │   ├── SetTracker.js
+│   │   │   └── WASMcontext
+│   │   ├── post-workout
+│   │   │   ├── AnalyticsView.js
+│   │   │   ├── ProgressChart.js
+│   │   │   └── ShareModule.js
+│   │   └── user-onboarding
+│   │       ├── GoalSetting.js
+│   │       ├── fitnesstest.js
+│   │       └── welcomescreen.js
+│   ├── libs
+│   │   └── wasm
+│   │       ├── adapter.js
+│   │       ├── loader.js
+│   │       └── types.d.ts
+│   ├── models
+│   ├── modules
+│   │   └── exercises
+│   ├── services
+│   │   └── exercise
+│   │       └── ExerciseValidator.js
+│   ├── state
+│   │   ├── useProgressStore.js
+│   │   ├── useUserStore.js
+│   │   └── useWorkoutStore.js
+│   ├── tracking
+│   │   └── pose
+│   │       ├── PoseRenderer.jsx
+│   │       └── camera
+│   ├── utils
+│   │   ├── math
+│   │   │   ├── angles.ts
+│   │   │   ├── animation
+│   │   │   ├── index.ts
+│   │   │   ├── linearAlgebra.ts
+│   │   │   ├── physics
+│   │   │   └── trigonometry.ts
+│   │   └── workoutMath
+│   │       ├── index.ts
+│   │       └── progression.ts
+│   └── workflow
+│       └── session
+│           └── execution
+├── structure.json
+├── structured_tree.txt
+├── vite.config.js
+└── wasm
+    ├── build.sh
+    └── src
+        ├── build.sh
+        ├── lib.rs
+        ├── neon_render.rs
+        ├── pose_detection.rs
+        └── rep_counter.rs
+
+57 directories, 110 files
