@@ -3,6 +3,12 @@ import { useState } from 'react';
 import { FaUser } from 'react-icons/fa';
 import './App.css';
 
+useEffect(() => {
+  if (!localStorage.getItem('authToken')) {
+    window.location.href = '/';
+  }
+}, []);
+
 function App() {
   const [activeButton, setActiveButton] = useState(null);
 

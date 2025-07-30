@@ -92,17 +92,23 @@ class AuthHandler {
             $this->handleError("Email already registered", 409);
         }
 
-        $result = $this->collection->insertOne([
-            'firstName' => $data['firstName'],
-            'lastName' => $data['lastName'],
-            'email' => $data['email'],
-            'password' => password_hash($data['password'], PASSWORD_BCRYPT),
-            'createdAt' => new UTCDateTime(),
-            'timezone' => 'Africa/Johannesburg',
-            'status' => 'active',
-            'role' => 'user',
-            'lastLogin' => null
-        ]);
+      $result = $this->collection->insertOne([
+    'firstName' => $data['firstName'],
+    'lastName' => $data['lastName'],
+    'email' => $data['email'],
+    'password' => password_hash($data['password'], PASSWORD_BCRYPT),
+    'createdAt' => new UTCDateTime(),
+    'timezone' => 'Africa/Johannesburg',
+    'status' => 'active',
+    'role' => 'user',
+    'lastLogin' => null,
+    // Subscription fields
+    'paymentStatus' => 'inactive', // Default for new users
+    'lastPaymentDate' => null,     // Will be set after first payment
+    'nextBillingDate' => null,     // Will be set after subscription
+    'subscriptionId' => null,      // Will be set from PayFast
+    'plan' => null                 // Can be 'monthly', 'annual', etc.
+]);
 
         if ($result->getInsertedCount() === 1) {
             $this->startSession($data['email']);

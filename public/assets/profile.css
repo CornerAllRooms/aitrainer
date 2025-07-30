@@ -334,3 +334,112 @@ h1 {
         grid-column: span 1;
     }
 }
+/* Subscription Section - Matches Profile Theme */
+.subscription-details {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+    box-shadow: var(--card-shadow);
+    border-left: 5px solid var(--info);
+    transition: transform 0.3s ease;
+}
+
+.subscription-details:hover {
+    transform: translateY(-3px);
+}
+
+.subscription-details p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.subscription-details strong {
+    min-width: 80px;
+    display: inline-block;
+    color: var(--text-secondary);
+}
+
+/* Status Badge - Matching Existing Style */
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-badge.inactive {
+    background: rgba(231, 76, 60, 0.1);
+    color: var(--danger);
+}
+
+.status-badge.active {
+    background: rgba(46, 204, 113, 0.1);
+    color: var(--success);
+}
+
+/* Buttons - Matching Theme */
+.subscribe-button {
+    display: inline-block;
+    background: var(--success);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.subscribe-button:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+.cancel-button {
+    display: inline-block;
+    background: var(--danger);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancel-button:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Form Elements */
+#cancelSubscriptionForm {
+    margin-top: 15px;
+}
+
+/* Warning Message */
+.cancellation-warning {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(241, 196, 15, 0.1);
+    border-radius: 6px;
+    color: var(--warning);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+}
+
+.cancellation-warning svg {
+    margin-right: 8px;
+    min-width: 16px;
+}

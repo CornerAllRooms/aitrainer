@@ -68,7 +68,41 @@ $lastActiveFormatted = $lastLogin ? $lastLogin->format('F j, Y g:i A') : 'Never'
     <div class="profile-container">
         <div class="profile-header">
             <div class="avatar" style="background: linear-gradient(135deg, #<?php echo substr(md5($user['email']), 0, 6); ?>, #<?php echo substr(md5($user['email']), 6, 6); ?>)">
-                <?php echo strtoupper(substr($user['firstName'] ?? 'U', 0, 1)); ?>
+                <?php echo strtoupper(substr($user['firstName'] ?? 'U', 0, 1)); ?><div class="subscription-card <?php echo $subscriptionActive ? 'active' : 'inactive'; ?>">
+    <h3>Subscription Management</h3>
+    
+    <?php if ($subscriptionActive): ?>
+        <div class="subscription-details">
+            <p><strong>Status:</strong> <span class="status-badge active">Active</span></p>
+            <p><strong>Last Payment:</strong> <?php echo $lastPaymentDate; ?></p>
+            <p><strong>Next Billing:</strong> 
+                <?php 
+                if ($user['subscriptionType'] === 'recurring') {
+                    echo date('F j, Y', strtotime($lastPaymentDate . ' +1 month'));
+                } else {
+                    echo 'Non-recurring';
+                }
+                ?>
+            </p>
+        </div>
+        
+        <form id="cancelSubscriptionForm" action="/api/cancel_subscription.php" method="POST">
+            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+            <button type="submit" class="cancel-button">
+                Cancel Subscription
+            </button>
+        </form>
+        
+        <div class="cancellation-warning">
+            <p>⚠️ You'll retain access until the end of your billing period.</p>
+        </div>
+    <?php else: ?>
+        <div class="subscription-details">
+            <p><strong>Status:</strong> <span class="status-badge inactive">Inactive</span></p>
+            <a href="/subscribe.php" class="subscribe-button">Subscribe Now</a>
+        </div>
+    <?php endif; ?>
+</div>
             </div>
             <h1>Hello, <span class="username"><?php echo htmlspecialchars($user['firstName'] ?? 'User'); ?></span>!</h1>
             <p class="subtitle">Here's your current activity status</p>
