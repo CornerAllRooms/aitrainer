@@ -141,12 +141,7 @@
         "barPath": { "maxDeviation": 0.1 },
         "spineAlignment": { "threshold": 0.9 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -274,12 +269,7 @@
         "eccentricControl": { "minDuration": 3 },
         "bodyAlignment": { "threshold": 0.85 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -407,12 +397,7 @@
         "kneeFlexion": { "min": 90, "max": 120 },
         "thighStability": { "threshold": 0.9 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -540,12 +525,7 @@
         "kneeAngle": { "min": 175, "max": 180 },
         "hamstringStretch": { "min": 0.8 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]

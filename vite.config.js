@@ -1,20 +1,19 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+// vite.config.js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
 export default defineConfig({
-  plugins: [react()],
-  server: {
-    headers: {
-      'Cross-Origin-Opener-Policy': 'same-origin',
-      'Cross-Origin-Embedder-Policy': 'require-corp'
-    }
-  },
+  base: '/static/', // All assets will use this base path
   build: {
-    target: 'esnext'
-  },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src')
+    outDir: '../build',
+    emptyOutDir: true,
+    rollupOptions: {
+      input: path.resolve(__dirname, 'src/index.jsx'),
+      output: {
+        entryFileNames: 'js/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash][extname]'
+      }
     }
   }
-});
+})

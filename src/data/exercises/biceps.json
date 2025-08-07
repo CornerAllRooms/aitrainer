@@ -141,12 +141,7 @@
         "elbowStability": { "maxMovement": 5 },
         "barPath": { "maxDeviation": 0.1 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -274,12 +269,7 @@
         "chinHeight": { "min": 0.9 },
         "bicepsActivation": { "minThreshold": 0.75 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -516,12 +506,7 @@
         "bandTension": { "min": 0.5, "max": 0.8 },
         "elbowPath": { "consistencyThreshold": 0.75 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -758,12 +743,7 @@
         "pronationAngle": { "min": 0, "max": 180 },
         "tempo": { "lifting": 2, "lowering": 3, "rotation": 1 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]

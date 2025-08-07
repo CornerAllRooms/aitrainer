@@ -141,12 +141,7 @@
         "shoulderFlexion": { "min": 70, "max": 90 },
         "torsoStability": { "threshold": 0.85 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -274,12 +269,7 @@
         "shoulderExtension": { "min": 30, "max": 45 },
         "benchStability": { "threshold": 0.9 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -407,12 +397,7 @@
         "shoulderRotation": { "min": 90, "max": 180 },
         "pressPath": { "maxDeviation": 0.1 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]

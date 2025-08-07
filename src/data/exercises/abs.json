@@ -150,12 +150,7 @@
         "legAngle": { "min": 70, "max": 110 },
         "hipStability": { "maxVariation": 10 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -283,12 +278,7 @@
         "dumbbellStability": { "maxMovement": 15 },
         "kneeRaiseAngle": { "min": 80, "max": 100 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -416,12 +406,7 @@
         "legAngle": { "min": 80, "max": 100 },
         "shoulderStability": { "maxVariation": 10 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -658,12 +643,7 @@
         "kickHeight": { "min": 0.3, "max": 0.6 },
         "tempo": { "minBPM": 40, "maxBPM": 60 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]

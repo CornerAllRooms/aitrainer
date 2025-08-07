@@ -6,7 +6,7 @@ const useProgressStore = create(
       // Updated loadProgress
       loadProgress: async () => {
         try {
-          const response = await fetch('/api/progress', {
+          const response = await fetch('/../../server/public/api/progress', {
             credentials: 'include'
           });
           const data = await response.json();

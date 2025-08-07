@@ -141,12 +141,7 @@
         "rangeOfMotion": { "min": 0.8, "max": 1.0 },
         "explosiveness": { "minVelocity": 0.5 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -274,12 +269,7 @@
         "kneeAlignment": { "maxDeviation": 5 },
         "fullRange": { "minStretch": 0.9, "minContraction": 0.9 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -516,12 +506,7 @@
         "kneeAngle": { "min": 85, "max": 95 },
         "soleusActivation": { "minThreshold": 0.7 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]
@@ -758,12 +743,7 @@
         "groundContact": { "maxDuration": 0.2 },
         "elasticity": { "minRebound": 0.7 }
       },
-      "feedback": {
-        "audio": {
-          "correct": "/feedback/audio/general/keep-trying.mp3",
-          "incorrect": "/feedback/audio/general/better-position.mp3",
-          "perfect": "/feedback/audio/general/perfect.mp3"
-        },
+      
         "visual": {
           "correct": [0, 255, 0],
           "incorrect": [255, 0, 0]

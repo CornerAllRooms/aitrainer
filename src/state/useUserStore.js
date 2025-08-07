@@ -39,7 +39,7 @@ const useUserStore = create(
         formData.append('csrf_token', get().csrfToken);
 
         try {
-          const response = await fetch('/login.php', {
+          const response = await fetch('/../../server/public/index.php', {
             method: 'POST',
             body: formData,
             credentials: 'include'
@@ -63,7 +63,7 @@ const useUserStore = create(
 
       // Logout (using your existing PHP endpoint)
       logout: async () => {
-        await fetch('/logout.php', {
+        await fetch('/../../server/public/logout.php', {
           method: 'POST',
           credentials: 'include'
         });

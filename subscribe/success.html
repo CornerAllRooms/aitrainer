@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://cornerroom.co.za/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<head>
+    <title>Payment Successful</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .success-text {
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #44444a;
+        }
+        
+        .go-button {
+            background-color: #ff4739;
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 30px;
+        }
+        
+        .go-button:hover {
+            background-color: #f3655b;
+        }
+        
+        .security-badge {
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        
+        .security-badge img {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-text">Successful!</div>
+        <button class="go-button" id="goButton">GO</button>
+        
+        <div class="security-badge">
+            <img src="https://cornerroom.co.za/aitrainer/payfast.svg" alt="PayFast Secure Payment">
+        </div>
+    </div>
+
+    <script>
+        // Enhanced security checks
+        document.addEventListener('DOMContentLoaded', function() {
+            // List of valid PayFast domains/subdomains
+            const validPayfastDomains = [
+                'payfast.co.za',
+                'www.payfast.co.za',
+                'payment.payfast.io',
+                'sandbox.payfast.co.za'
+            ];
+            
+            // Check if coming from PayFast or has valid session token
+            function isValidAccess() {
+                // 1. Check for session token (set after successful payment)
+                if(sessionStorage.getItem('payfastVerified')) {
+                    return true;
+                }
+                
+                // 2. Check referrer against PayFast domains
+                try {
+                    if(document.referrer) {
+                        const referrerUrl = new URL(document.referrer);
+                        return validPayfastDomains.includes(referrerUrl.hostname);
+                    }
+                } catch(e) {
+                    console.error('Referrer check error:', e);
+                }
+                
+                return false;
+            }
+            
+            // Handle access control
+            if(!isValidAccess()) {
+                // Redirect to payment page if not valid
+                window.location.href = 'https://ai.cornerroom.co.za/profile.php';
+                return;
+            }
+            
+            // Mark as verified for this session
+            sessionStorage.setItem('payfastVerified', 'true');
+            
+            // GO button functionality
+            document.getElementById('goButton').addEventListener('click', function() {
+                window.location.href = 'https://ai.cornerroom.co.za/app.jsx';
+            });
+            
+            // Additional security: Clear token after 1 hour
+            setTimeout(() => {
+                sessionStorage.removeItem('payfastVerified');
+            }, 3600000); // 1 hour = 3600000 ms
+        });
+    </script>
+</body>
+</html>

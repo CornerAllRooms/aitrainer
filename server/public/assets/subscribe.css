@@ -1,0 +1,178 @@
+/* subscribe.css - Matches Profile Theme */
+:root {
+    /* Reuse your existing variables */
+    --success: #2ecc71;
+    --warning: #f39c12;
+    --danger: #e74c3c;
+    --info: #3498db;
+    --text-primary: #2c3e50;
+    --text-secondary: #7f8c8d;
+    --bg-light: #f9f9f9;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.subscribe-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    padding: 30px;
+    background-image: url('./profile2.avif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.subscribe-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+}
+
+.subscribe-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Pricing Card - Matching Profile Style */
+.pricing-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: var(--card-shadow);
+    border-left: 5px solid var(--success);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-3px);
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.period {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    color: var(--text-primary);
+}
+
+.features li:before {
+    content: "✓";
+    margin-right: 10px;
+    color: var(--success);
+    font-weight: bold;
+}
+
+/* Payment Method - Matching Profile Cards */
+.payment-method {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 25px 0;
+    box-shadow: var(--card-shadow);
+    border-left: 5px solid var(--info);
+}
+
+.method-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.method-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill: var(--info);
+}
+
+.method-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-left: 34px; /* icon width + margin */
+}
+
+/* Subscribe Button - Matching Profile Buttons */
+.subscribe-button {
+    width: 100%;
+    background: var(--success);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 2px 10px rgba(46, 204, 113, 0.3);
+}
+
+.subscribe-button:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
+}
+
+/* Security Notice - Matching Profile Style */
+.security-notice {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+.lock-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--text-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .subscribe-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .subscribe-card {
+        padding: 20px;
+    }
+    
+    .price {
+        font-size: 2rem;
+    }
+}
