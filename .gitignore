@@ -18,5 +18,6 @@ dist/
 *.swp
 #
 server/config/
-*MailerJetMailer.php
-*settings.php
+*.MailerJetMailer.php
+*.settings.php
+*.database.php
