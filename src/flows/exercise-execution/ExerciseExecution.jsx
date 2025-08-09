@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { FeedbackManager } from '@/feedback/FeedbackManager';
 import { useExerciseStore } from '@/state/useExerciseStore';
+// Add these imports
+import { useWorkout } from '@/state/WorkoutContext';
+import { useWasm } from '@/libs/wasm/WasmContext';
+import RealTimeFeedback from './RealTimeFeedback';
 
 const feedbackManager = new FeedbackManager();
 

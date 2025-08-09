@@ -40,3 +40,89 @@
 .camera-error {
   color: #ff4444;
 }
+/* RealTimeFeedback Styles */
+.feedback-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 10;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-banner {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 100;
+  pointer-events: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  max-width: 80%;
+}
+
+.feedback-banner.success {
+  background: var(--beginner-color);
+  color: white;
+  opacity: 1;
+}
+
+.feedback-banner.error {
+  background: var(--advanced-color);
+  color: white;
+  opacity: 1;
+}
+
+.angle-grid {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+  width: calc(100% - 2rem);
+}
+
+.performance-metrics {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: rgba(0,0,0,0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.metric.engagement {
+  color: var(--beginner-color);
+}
+
+.metric.fps {
+  color: #3498db;
+}
+
+/* Animation for new feedback */
+@keyframes pulseFeedback {
+  0% { transform: translateX(-50%) scale(0.9); }
+  50% { transform: translateX(-50%) scale(1.05); }
+  100% { transform: translateX(-50%) scale(1); }
+}
+
+.feedback-banner.success,
+.feedback-banner.error {
+  animation: pulseFeedback 0.5s ease;
+}

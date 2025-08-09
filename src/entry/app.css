@@ -219,3 +219,140 @@ body {
     padding: 1rem;
   }
 }
+/* Goal Setting Specific Styles */
+.goal-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.form-section {
+  margin-bottom: 2.5rem;
+}
+
+.form-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #2c3e50;
+  margin-bottom: 1.2rem;
+}
+
+.section-icon {
+  color: #3498db;
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.option-card {
+  padding: 1.5rem;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.option-card:hover {
+  border-color: #3498db;
+  transform: translateY(-3px);
+}
+
+.option-card.active {
+  border-color: #3498db;
+  background: rgba(52, 152, 219, 0.1);
+  font-weight: 600;
+}
+
+.option-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.toggle-option {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #ecf0f1;
+  border-radius: 50px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-option:hover {
+  border-color: #3498db;
+}
+
+.toggle-option.active {
+  border-color: #3498db;
+  background: #3498db;
+  color: white;
+}
+
+.range-input {
+  padding: 1rem 0;
+}
+
+.range-input input[type="range"] {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  background: #ecf0f1;
+  border-radius: 4px;
+  outline: none;
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #3498db;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.checkbox-option:hover {
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.checkbox-option input {
+  margin: 0;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}

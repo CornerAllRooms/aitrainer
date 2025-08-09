@@ -1,5 +1,11 @@
 import { createWasmValidator } from './loader';
 import JsValidator from '@/services/exercise/ExerciseValidator';
+import init, { 
+  ExerciseAnalyzer,
+  PoseDetector,
+  NeonRenderer 
+} from '@/public/wasm/ai_trainer';
+import { useWorkout } from '@/state/WorkoutContext';
 
 export async function createValidator(exerciseId, fallback = true) {
   try {
