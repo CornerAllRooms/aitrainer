@@ -16,4 +16,7 @@ dist/
 
 # WSL temporary files
 *.swp
+#
 server/config/
+*MailerJetMailer.php
+*settings.php
