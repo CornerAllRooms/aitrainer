@@ -1,20 +1,16 @@
-Your .gitignore file already ignores the files and directories you listed. Here’s a summary of what is ignored:
-
-- node_modules/
-- public/audio/tts/
-- .env
-- google-tts-key.json
-- dist/
-- *.log
-- .vscode/
-- .idea/
-- *.swp
-- server/config/
+node_modules/
+public/audio/tts/
+.env
+google-tts-key.json
+dist/
+*.log
+.vscode/
+.idea/
+*.swp
+server/config/
 server/config/MailjetMailer.php
 server/config/settings.php
 server/config/database.php
 *.MailerJetMailer.php
 *.settings.php
 *.database.php
-
-If you need to add more files or directories, just list them in the same format. If you want to ignore something specific, let me know!
