@@ -32,101 +32,116 @@
           }
         }
       ],
-      {
-  "audio": {
-    "correct": {
-      "type": "google-tts",
-      "variants": [
-        "Good form! Keep going",
-        "Doing great! Continue",
-        "Nice control! Maintain",
-        "Solid effort! Steady",
-        "Well executed! Breathe",
-        "Proper technique! Focus",
-        "Clean movement! Sustain",
-        "On point! Don't stop",
-        "Precise motion! Hold",
-        "Excellent! You've got this",
-        "Tight form! Keep rhythm",
-        "Controlled! Stay strong",
-        "Balanced! Keep flowing",
-        "Stable! Push forward",
-        "Aligned! Keep working",
-        "Smooth! Stay consistent",
-        "Powerful! Maintain pace",
-        "Fluid! Don't relax",
-        "Strong! Keep pressure",
-        "Masterful! Stay locked in"
-      ],
-      "config": {
-        "audioEncoding": "LINEAR16",
-        "effectsProfileId": ["handset-class-device"],
-        "pitch": 0,
-        "speakingRate": 0.89,
-        "voice": {
-          "languageCode": "en-US",
-          "name": "en-US-Chirp3-HD-Zephyr"
+      "audio": {
+        "correct": {
+          "type": "google-tts",
+          "variants": [
+            "Good form! Keep going",
+            "Doing great! Continue",
+            "Nice control! Maintain",
+            "Solid effort! Steady",
+            "Well executed! Breathe",
+            "Proper technique! Focus",
+            "Clean movement! Sustain",
+            "On point! Don't stop",
+            "Precise motion! Hold",
+            "Excellent! You've got this",
+            "Tight form! Keep rhythm",
+            "Controlled! Stay strong",
+            "Balanced! Keep flowing",
+            "Stable! Push forward",
+            "Aligned! Keep working",
+            "Smooth! Stay consistent",
+            "Powerful! Maintain pace",
+            "Fluid! Don't relax",
+            "Strong! Keep pressure",
+            "Masterful! Stay locked in"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "incorrect": {
+          "type": "google-tts",
+          "variants": [
+            "Adjust your posture",
+            "Check your alignment",
+            "Modify your stance",
+            "Correct your position",
+            "Improve your form",
+            "Refine your technique",
+            "Tweak your setup",
+            "Fix your posture",
+            "Straighten your back",
+            "Engage your core more",
+            "Level your shoulders",
+            "Align your hips",
+            "Square your feet",
+            "Even your balance",
+            "Center your weight",
+            "Loosen your grip",
+            "Relax your neck",
+            "Tighten your abs",
+            "Lower your shoulders",
+            "Shift your weight"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "perfect": {
+          "type": "google-tts",
+          "variants": [
+            "Perfect execution!",
+            "Flawless technique!",
+            "Textbook form!",
+            "Competition ready!",
+            "Elite performance!",
+            "Masterclass motion!",
+            "Gold standard!",
+            "Impeccable control!",
+            "Precision defined!",
+            "Artistic movement!",
+            "Surgical precision!",
+            "Robot-level accuracy!",
+            "Olympic quality!",
+            "Pro-level execution!",
+            "Spotless technique!",
+            "100% perfection!",
+            "Showcase example!",
+            "Coaching manual perfect!",
+            "No notes!",
+            "Absolute ideal!"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
         }
-      }
-    },
-    "incorrect": {
-      "type": "google-tts",
-      "variants": [
-        "Adjust your posture",
-        "Check your alignment",
-        "Modify your stance",
-        "Correct your position",
-        "Improve your form",
-        "Refine your technique",
-        "Tweak your setup",
-        "Fix your posture",
-        "Straighten your back",
-        "Engage your core more",
-        "Level your shoulders",
-        "Align your hips",
-        "Square your feet",
-        "Even your balance",
-        "Center your weight",
-        "Loosen your grip",
-        "Relax your neck",
-        "Tighten your abs",
-        "Lower your shoulders",
-        "Shift your weight"
-      ],
-      "config": { /* Same config as above */ }
-    },
-    "perfect": {
-      "type": "google-tts",
-      "variants": [
-        "Perfect execution!",
-        "Flawless technique!",
-        "Textbook form!",
-        "Competition ready!",
-        "Elite performance!",
-        "Masterclass motion!",
-        "Gold standard!",
-        "Impeccable control!",
-        "Precision defined!",
-        "Artistic movement!",
-        "Surgical precision!",
-        "Robot-level accuracy!",
-        "Olympic quality!",
-        "Pro-level execution!",
-        "Spotless technique!",
-        "100% perfection!",
-        "Showcase example!",
-        "Coaching manual perfect!",
-        "No notes!",
-        "Absolute ideal!"
-      ],
-      "config": { /* Same config */ }
-    }
-  }
-}
-        "visual": {
-          "correct": [0, 255, 0],
-          "incorrect": [255, 0, 0]
-        }
+      },
+      "visual": {
+        "correct": [0, 255, 0],
+        "incorrect": [255, 0, 0]
       },
       "wslPaths": {
         "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_kb_goodmorning.bin"
@@ -141,11 +156,9 @@
         "barPath": { "maxDeviation": 0.1 },
         "spineAlignment": { "threshold": 0.9 }
       },
-      
-        "visual": {
-          "correct": [0, 255, 0],
-          "incorrect": [255, 0, 0]
-        }
+      "visual": {
+        "correct": [0, 255, 0],
+        "incorrect": [255, 0, 0]
       },
       "wslPaths": {
         "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_romanian_deadlift.bin"
@@ -160,101 +173,116 @@
         "kneeFlexion": { "min": 120, "max": 140 },
         "tempo": { "lifting": 2, "lowering": 3 }
       },
-      {
-  "audio": {
-    "correct": {
-      "type": "google-tts",
-      "variants": [
-        "Good form! Keep going",
-        "Doing great! Continue",
-        "Nice control! Maintain",
-        "Solid effort! Steady",
-        "Well executed! Breathe",
-        "Proper technique! Focus",
-        "Clean movement! Sustain",
-        "On point! Don't stop",
-        "Precise motion! Hold",
-        "Excellent! You've got this",
-        "Tight form! Keep rhythm",
-        "Controlled! Stay strong",
-        "Balanced! Keep flowing",
-        "Stable! Push forward",
-        "Aligned! Keep working",
-        "Smooth! Stay consistent",
-        "Powerful! Maintain pace",
-        "Fluid! Don't relax",
-        "Strong! Keep pressure",
-        "Masterful! Stay locked in"
-      ],
-      "config": {
-        "audioEncoding": "LINEAR16",
-        "effectsProfileId": ["handset-class-device"],
-        "pitch": 0,
-        "speakingRate": 0.89,
-        "voice": {
-          "languageCode": "en-US",
-          "name": "en-US-Chirp3-HD-Zephyr"
+      "audio": {
+        "correct": {
+          "type": "google-tts",
+          "variants": [
+            "Good form! Keep going",
+            "Doing great! Continue",
+            "Nice control! Maintain",
+            "Solid effort! Steady",
+            "Well executed! Breathe",
+            "Proper technique! Focus",
+            "Clean movement! Sustain",
+            "On point! Don't stop",
+            "Precise motion! Hold",
+            "Excellent! You've got this",
+            "Tight form! Keep rhythm",
+            "Controlled! Stay strong",
+            "Balanced! Keep flowing",
+            "Stable! Push forward",
+            "Aligned! Keep working",
+            "Smooth! Stay consistent",
+            "Powerful! Maintain pace",
+            "Fluid! Don't relax",
+            "Strong! Keep pressure",
+            "Masterful! Stay locked in"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "incorrect": {
+          "type": "google-tts",
+          "variants": [
+            "Adjust your posture",
+            "Check your alignment",
+            "Modify your stance",
+            "Correct your position",
+            "Improve your form",
+            "Refine your technique",
+            "Tweak your setup",
+            "Fix your posture",
+            "Straighten your back",
+            "Engage your core more",
+            "Level your shoulders",
+            "Align your hips",
+            "Square your feet",
+            "Even your balance",
+            "Center your weight",
+            "Loosen your grip",
+            "Relax your neck",
+            "Tighten your abs",
+            "Lower your shoulders",
+            "Shift your weight"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "perfect": {
+          "type": "google-tts",
+          "variants": [
+            "Perfect execution!",
+            "Flawless technique!",
+            "Textbook form!",
+            "Competition ready!",
+            "Elite performance!",
+            "Masterclass motion!",
+            "Gold standard!",
+            "Impeccable control!",
+            "Precision defined!",
+            "Artistic movement!",
+            "Surgical precision!",
+            "Robot-level accuracy!",
+            "Olympic quality!",
+            "Pro-level execution!",
+            "Spotless technique!",
+            "100% perfection!",
+            "Showcase example!",
+            "Coaching manual perfect!",
+            "No notes!",
+            "Absolute ideal!"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
         }
-      }
-    },
-    "incorrect": {
-      "type": "google-tts",
-      "variants": [
-        "Adjust your posture",
-        "Check your alignment",
-        "Modify your stance",
-        "Correct your position",
-        "Improve your form",
-        "Refine your technique",
-        "Tweak your setup",
-        "Fix your posture",
-        "Straighten your back",
-        "Engage your core more",
-        "Level your shoulders",
-        "Align your hips",
-        "Square your feet",
-        "Even your balance",
-        "Center your weight",
-        "Loosen your grip",
-        "Relax your neck",
-        "Tighten your abs",
-        "Lower your shoulders",
-        "Shift your weight"
-      ],
-      "config": { /* Same config as above */ }
-    },
-    "perfect": {
-      "type": "google-tts",
-      "variants": [
-        "Perfect execution!",
-        "Flawless technique!",
-        "Textbook form!",
-        "Competition ready!",
-        "Elite performance!",
-        "Masterclass motion!",
-        "Gold standard!",
-        "Impeccable control!",
-        "Precision defined!",
-        "Artistic movement!",
-        "Surgical precision!",
-        "Robot-level accuracy!",
-        "Olympic quality!",
-        "Pro-level execution!",
-        "Spotless technique!",
-        "100% perfection!",
-        "Showcase example!",
-        "Coaching manual perfect!",
-        "No notes!",
-        "Absolute ideal!"
-      ],
-      "config": { /* Same config */ }
-    }
-  }
-}
-        "visual": {
-          "correct": [0, 255, 0],
-          "incorrect": [255, 0, 0]
-        }
+      },
+      "visual": {
+        "correct": [0, 255, 0],
+        "incorrect": [255, 0, 0]
       },
       "wslPaths": {
         "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_leg_curl.bin"
@@ -269,11 +297,9 @@
         "eccentricControl": { "minDuration": 3 },
         "bodyAlignment": { "threshold": 0.85 }
       },
-      
-        "visual": {
-          "correct": [0, 255, 0],
-          "incorrect": [255, 0, 0]
-        }
+      "visual": {
+        "correct": [0, 255, 0],
+        "incorrect": [255, 0, 0]
       },
       "wslPaths": {
         "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_ghr.bin"
@@ -288,101 +314,116 @@
         "balance": { "threshold": 0.8 },
         "hipHinge": { "min": 30, "max": 60 }
       },
-      {
-  "audio": {
-    "correct": {
-      "type": "google-tts",
-      "variants": [
-        "Good form! Keep going",
-        "Doing great! Continue",
-        "Nice control! Maintain",
-        "Solid effort! Steady",
-        "Well executed! Breathe",
-        "Proper technique! Focus",
-        "Clean movement! Sustain",
-        "On point! Don't stop",
-        "Precise motion! Hold",
-        "Excellent! You've got this",
-        "Tight form! Keep rhythm",
-        "Controlled! Stay strong",
-        "Balanced! Keep flowing",
-        "Stable! Push forward",
-        "Aligned! Keep working",
-        "Smooth! Stay consistent",
-        "Powerful! Maintain pace",
-        "Fluid! Don't relax",
-        "Strong! Keep pressure",
-        "Masterful! Stay locked in"
-      ],
-      "config": {
-        "audioEncoding": "LINEAR16",
-        "effectsProfileId": ["handset-class-device"],
-        "pitch": 0,
-        "speakingRate": 0.89,
-        "voice": {
-          "languageCode": "en-US",
-          "name": "en-US-Chirp3-HD-Zephyr"
+      "audio": {
+        "correct": {
+          "type": "google-tts",
+          "variants": [
+            "Good form! Keep going",
+            "Doing great! Continue",
+            "Nice control! Maintain",
+            "Solid effort! Steady",
+            "Well executed! Breathe",
+            "Proper technique! Focus",
+            "Clean movement! Sustain",
+            "On point! Don't stop",
+            "Precise motion! Hold",
+            "Excellent! You've got this",
+            "Tight form! Keep rhythm",
+            "Controlled! Stay strong",
+            "Balanced! Keep flowing",
+            "Stable! Push forward",
+            "Aligned! Keep working",
+            "Smooth! Stay consistent",
+            "Powerful! Maintain pace",
+            "Fluid! Don't relax",
+            "Strong! Keep pressure",
+            "Masterful! Stay locked in"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "incorrect": {
+          "type": "google-tts",
+          "variants": [
+            "Adjust your posture",
+            "Check your alignment",
+            "Modify your stance",
+            "Correct your position",
+            "Improve your form",
+            "Refine your technique",
+            "Tweak your setup",
+            "Fix your posture",
+            "Straighten your back",
+            "Engage your core more",
+            "Level your shoulders",
+            "Align your hips",
+            "Square your feet",
+            "Even your balance",
+            "Center your weight",
+            "Loosen your grip",
+            "Relax your neck",
+            "Tighten your abs",
+            "Lower your shoulders",
+            "Shift your weight"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "perfect": {
+          "type": "google-tts",
+          "variants": [
+            "Perfect execution!",
+            "Flawless technique!",
+            "Textbook form!",
+            "Competition ready!",
+            "Elite performance!",
+            "Masterclass motion!",
+            "Gold standard!",
+            "Impeccable control!",
+            "Precision defined!",
+            "Artistic movement!",
+            "Surgical precision!",
+            "Robot-level accuracy!",
+            "Olympic quality!",
+            "Pro-level execution!",
+            "Spotless technique!",
+            "100% perfection!",
+            "Showcase example!",
+            "Coaching manual perfect!",
+            "No notes!",
+            "Absolute ideal!"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
         }
-      }
-    },
-    "incorrect": {
-      "type": "google-tts",
-      "variants": [
-        "Adjust your posture",
-        "Check your alignment",
-        "Modify your stance",
-        "Correct your position",
-        "Improve your form",
-        "Refine your technique",
-        "Tweak your setup",
-        "Fix your posture",
-        "Straighten your back",
-        "Engage your core more",
-        "Level your shoulders",
-        "Align your hips",
-        "Square your feet",
-        "Even your balance",
-        "Center your weight",
-        "Loosen your grip",
-        "Relax your neck",
-        "Tighten your abs",
-        "Lower your shoulders",
-        "Shift your weight"
-      ],
-      "config": { /* Same config as above */ }
-    },
-    "perfect": {
-      "type": "google-tts",
-      "variants": [
-        "Perfect execution!",
-        "Flawless technique!",
-        "Textbook form!",
-        "Competition ready!",
-        "Elite performance!",
-        "Masterclass motion!",
-        "Gold standard!",
-        "Impeccable control!",
-        "Precision defined!",
-        "Artistic movement!",
-        "Surgical precision!",
-        "Robot-level accuracy!",
-        "Olympic quality!",
-        "Pro-level execution!",
-        "Spotless technique!",
-        "100% perfection!",
-        "Showcase example!",
-        "Coaching manual perfect!",
-        "No notes!",
-        "Absolute ideal!"
-      ],
-      "config": { /* Same config */ }
-    }
-  }
-}
-        "visual": {
-          "correct": [0, 255, 0],
-          "incorrect": [255, 0, 0]
-        }
+      },
+      "visual": {
+        "correct": [0, 255, 0],
+        "incorrect": [255, 0, 0]
       },
       "wslPaths": {
         "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_single_leg.bin"
@@ -397,11 +438,9 @@
         "kneeFlexion": { "min": 90, "max": 120 },
         "thighStability": { "threshold": 0.9 }
       },
-      
-        "visual": {
-          "correct": [0, 255, 0],
-          "incorrect": [255, 0, 0]
-        }
+      "visual": {
+        "correct": [0, 255, 0],
+        "incorrect": [255, 0, 0]
       },
       "wslPaths": {
         "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_seated_curl.bin"
@@ -416,101 +455,116 @@
         "eccentricControl": { "minDuration": 4 },
         "torsoAngle": { "min": 0, "max": 45 }
       },
-      {
-  "audio": {
-    "correct": {
-      "type": "google-tts",
-      "variants": [
-        "Good form! Keep going",
-        "Doing great! Continue",
-        "Nice control! Maintain",
-        "Solid effort! Steady",
-        "Well executed! Breathe",
-        "Proper technique! Focus",
-        "Clean movement! Sustain",
-        "On point! Don't stop",
-        "Precise motion! Hold",
-        "Excellent! You've got this",
-        "Tight form! Keep rhythm",
-        "Controlled! Stay strong",
-        "Balanced! Keep flowing",
-        "Stable! Push forward",
-        "Aligned! Keep working",
-        "Smooth! Stay consistent",
-        "Powerful! Maintain pace",
-        "Fluid! Don't relax",
-        "Strong! Keep pressure",
-        "Masterful! Stay locked in"
-      ],
-      "config": {
-        "audioEncoding": "LINEAR16",
-        "effectsProfileId": ["handset-class-device"],
-        "pitch": 0,
-        "speakingRate": 0.89,
-        "voice": {
-          "languageCode": "en-US",
-          "name": "en-US-Chirp3-HD-Zephyr"
+      "audio": {
+        "correct": {
+          "type": "google-tts",
+          "variants": [
+            "Good form! Keep going",
+            "Doing great! Continue",
+            "Nice control! Maintain",
+            "Solid effort! Steady",
+            "Well executed! Breathe",
+            "Proper technique! Focus",
+            "Clean movement! Sustain",
+            "On point! Don't stop",
+            "Precise motion! Hold",
+            "Excellent! You've got this",
+            "Tight form! Keep rhythm",
+            "Controlled! Stay strong",
+            "Balanced! Keep flowing",
+            "Stable! Push forward",
+            "Aligned! Keep working",
+            "Smooth! Stay consistent",
+            "Powerful! Maintain pace",
+            "Fluid! Don't relax",
+            "Strong! Keep pressure",
+            "Masterful! Stay locked in"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "incorrect": {
+          "type": "google-tts",
+          "variants": [
+            "Adjust your posture",
+            "Check your alignment",
+            "Modify your stance",
+            "Correct your position",
+            "Improve your form",
+            "Refine your technique",
+            "Tweak your setup",
+            "Fix your posture",
+            "Straighten your back",
+            "Engage your core more",
+            "Level your shoulders",
+            "Align your hips",
+            "Square your feet",
+            "Even your balance",
+            "Center your weight",
+            "Loosen your grip",
+            "Relax your neck",
+            "Tighten your abs",
+            "Lower your shoulders",
+            "Shift your weight"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "perfect": {
+          "type": "google-tts",
+          "variants": [
+            "Perfect execution!",
+            "Flawless technique!",
+            "Textbook form!",
+            "Competition ready!",
+            "Elite performance!",
+            "Masterclass motion!",
+            "Gold standard!",
+            "Impeccable control!",
+            "Precision defined!",
+            "Artistic movement!",
+            "Surgical precision!",
+            "Robot-level accuracy!",
+            "Olympic quality!",
+            "Pro-level execution!",
+            "Spotless technique!",
+            "100% perfection!",
+            "Showcase example!",
+            "Coaching manual perfect!",
+            "No notes!",
+            "Absolute ideal!"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
         }
-      }
-    },
-    "incorrect": {
-      "type": "google-tts",
-      "variants": [
-        "Adjust your posture",
-        "Check your alignment",
-        "Modify your stance",
-        "Correct your position",
-        "Improve your form",
-        "Refine your technique",
-        "Tweak your setup",
-        "Fix your posture",
-        "Straighten your back",
-        "Engage your core more",
-        "Level your shoulders",
-        "Align your hips",
-        "Square your feet",
-        "Even your balance",
-        "Center your weight",
-        "Loosen your grip",
-        "Relax your neck",
-        "Tighten your abs",
-        "Lower your shoulders",
-        "Shift your weight"
-      ],
-      "config": { /* Same config as above */ }
-    },
-    "perfect": {
-      "type": "google-tts",
-      "variants": [
-        "Perfect execution!",
-        "Flawless technique!",
-        "Textbook form!",
-        "Competition ready!",
-        "Elite performance!",
-        "Masterclass motion!",
-        "Gold standard!",
-        "Impeccable control!",
-        "Precision defined!",
-        "Artistic movement!",
-        "Surgical precision!",
-        "Robot-level accuracy!",
-        "Olympic quality!",
-        "Pro-level execution!",
-        "Spotless technique!",
-        "100% perfection!",
-        "Showcase example!",
-        "Coaching manual perfect!",
-        "No notes!",
-        "Absolute ideal!"
-      ],
-      "config": { /* Same config */ }
-    }
-  }
-}
-        "visual": {
-          "correct": [0, 255, 0],
-          "incorrect": [255, 0, 0]
-        }
+      },
+      "visual": {
+        "correct": [0, 255, 0],
+        "incorrect": [255, 0, 0]
       },
       "wslPaths": {
         "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_nordic.bin"
@@ -525,11 +579,9 @@
         "kneeAngle": { "min": 175, "max": 180 },
         "hamstringStretch": { "min": 0.8 }
       },
-      
-        "visual": {
-          "correct": [0, 255, 0],
-          "incorrect": [255, 0, 0]
-        }
+      "visual": {
+        "correct": [0, 255, 0],
+        "incorrect": [255, 0, 0]
       },
       "wslPaths": {
         "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_stiff_leg.bin"
@@ -544,101 +596,116 @@
         "hipExtension": { "min": 0.9 },
         "ballControl": { "threshold": 0.8 }
       },
-      {
-  "audio": {
-    "correct": {
-      "type": "google-tts",
-      "variants": [
-        "Good form! Keep going",
-        "Doing great! Continue",
-        "Nice control! Maintain",
-        "Solid effort! Steady",
-        "Well executed! Breathe",
-        "Proper technique! Focus",
-        "Clean movement! Sustain",
-        "On point! Don't stop",
-        "Precise motion! Hold",
-        "Excellent! You've got this",
-        "Tight form! Keep rhythm",
-        "Controlled! Stay strong",
-        "Balanced! Keep flowing",
-        "Stable! Push forward",
-        "Aligned! Keep working",
-        "Smooth! Stay consistent",
-        "Powerful! Maintain pace",
-        "Fluid! Don't relax",
-        "Strong! Keep pressure",
-        "Masterful! Stay locked in"
-      ],
-      "config": {
-        "audioEncoding": "LINEAR16",
-        "effectsProfileId": ["handset-class-device"],
-        "pitch": 0,
-        "speakingRate": 0.89,
-        "voice": {
-          "languageCode": "en-US",
-          "name": "en-US-Chirp3-HD-Zephyr"
+      "audio": {
+        "correct": {
+          "type": "google-tts",
+          "variants": [
+            "Good form! Keep going",
+            "Doing great! Continue",
+            "Nice control! Maintain",
+            "Solid effort! Steady",
+            "Well executed! Breathe",
+            "Proper technique! Focus",
+            "Clean movement! Sustain",
+            "On point! Don't stop",
+            "Precise motion! Hold",
+            "Excellent! You've got this",
+            "Tight form! Keep rhythm",
+            "Controlled! Stay strong",
+            "Balanced! Keep flowing",
+            "Stable! Push forward",
+            "Aligned! Keep working",
+            "Smooth! Stay consistent",
+            "Powerful! Maintain pace",
+            "Fluid! Don't relax",
+            "Strong! Keep pressure",
+            "Masterful! Stay locked in"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "incorrect": {
+          "type": "google-tts",
+          "variants": [
+            "Adjust your posture",
+            "Check your alignment",
+            "Modify your stance",
+            "Correct your position",
+            "Improve your form",
+            "Refine your technique",
+            "Tweak your setup",
+            "Fix your posture",
+            "Straighten your back",
+            "Engage your core more",
+            "Level your shoulders",
+            "Align your hips",
+            "Square your feet",
+            "Even your balance",
+            "Center your weight",
+            "Loosen your grip",
+            "Relax your neck",
+            "Tighten your abs",
+            "Lower your shoulders",
+            "Shift your weight"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "perfect": {
+          "type": "google-tts",
+          "variants": [
+            "Perfect execution!",
+            "Flawless technique!",
+            "Textbook form!",
+            "Competition ready!",
+            "Elite performance!",
+            "Masterclass motion!",
+            "Gold standard!",
+            "Impeccable control!",
+            "Precision defined!",
+            "Artistic movement!",
+            "Surgical precision!",
+            "Robot-level accuracy!",
+            "Olympic quality!",
+            "Pro-level execution!",
+            "Spotless technique!",
+            "100% perfection!",
+            "Showcase example!",
+            "Coaching manual perfect!",
+            "No notes!",
+            "Absolute ideal!"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
         }
-      }
-    },
-    "incorrect": {
-      "type": "google-tts",
-      "variants": [
-        "Adjust your posture",
-        "Check your alignment",
-        "Modify your stance",
-        "Correct your position",
-        "Improve your form",
-        "Refine your technique",
-        "Tweak your setup",
-        "Fix your posture",
-        "Straighten your back",
-        "Engage your core more",
-        "Level your shoulders",
-        "Align your hips",
-        "Square your feet",
-        "Even your balance",
-        "Center your weight",
-        "Loosen your grip",
-        "Relax your neck",
-        "Tighten your abs",
-        "Lower your shoulders",
-        "Shift your weight"
-      ],
-      "config": { /* Same config as above */ }
-    },
-    "perfect": {
-      "type": "google-tts",
-      "variants": [
-        "Perfect execution!",
-        "Flawless technique!",
-        "Textbook form!",
-        "Competition ready!",
-        "Elite performance!",
-        "Masterclass motion!",
-        "Gold standard!",
-        "Impeccable control!",
-        "Precision defined!",
-        "Artistic movement!",
-        "Surgical precision!",
-        "Robot-level accuracy!",
-        "Olympic quality!",
-        "Pro-level execution!",
-        "Spotless technique!",
-        "100% perfection!",
-        "Showcase example!",
-        "Coaching manual perfect!",
-        "No notes!",
-        "Absolute ideal!"
-      ],
-      "config": { /* Same config */ }
-    }
-  }
-}
-        "visual": {
-          "correct": [0, 255, 0],
-          "incorrect": [255, 0, 0]
-        }
+      },
+      "visual": {
+        "correct": [0, 255, 0],
+        "incorrect": [255, 0, 0]
       },
       "wslPaths": {
         "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_ball_curl.bin"
@@ -653,101 +720,116 @@
         "hipExtension": { "min": 0.95 },
         "legAlignment": { "maxDeviation": 5 }
       },
-      {
-  "audio": {
-    "correct": {
-      "type": "google-tts",
-      "variants": [
-        "Good form! Keep going",
-        "Doing great! Continue",
-        "Nice control! Maintain",
-        "Solid effort! Steady",
-        "Well executed! Breathe",
-        "Proper technique! Focus",
-        "Clean movement! Sustain",
-        "On point! Don't stop",
-        "Precise motion! Hold",
-        "Excellent! You've got this",
-        "Tight form! Keep rhythm",
-        "Controlled! Stay strong",
-        "Balanced! Keep flowing",
-        "Stable! Push forward",
-        "Aligned! Keep working",
-        "Smooth! Stay consistent",
-        "Powerful! Maintain pace",
-        "Fluid! Don't relax",
-        "Strong! Keep pressure",
-        "Masterful! Stay locked in"
-      ],
-      "config": {
-        "audioEncoding": "LINEAR16",
-        "effectsProfileId": ["handset-class-device"],
-        "pitch": 0,
-        "speakingRate": 0.89,
-        "voice": {
-          "languageCode": "en-US",
-          "name": "en-US-Chirp3-HD-Zephyr"
+      "audio": {
+        "correct": {
+          "type": "google-tts",
+          "variants": [
+            "Good form! Keep going",
+            "Doing great! Continue",
+            "Nice control! Maintain",
+            "Solid effort! Steady",
+            "Well executed! Breathe",
+            "Proper technique! Focus",
+            "Clean movement! Sustain",
+            "On point! Don't stop",
+            "Precise motion! Hold",
+            "Excellent! You've got this",
+            "Tight form! Keep rhythm",
+            "Controlled! Stay strong",
+            "Balanced! Keep flowing",
+            "Stable! Push forward",
+            "Aligned! Keep working",
+            "Smooth! Stay consistent",
+            "Powerful! Maintain pace",
+            "Fluid! Don't relax",
+            "Strong! Keep pressure",
+            "Masterful! Stay locked in"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "incorrect": {
+          "type": "google-tts",
+          "variants": [
+            "Adjust your posture",
+            "Check your alignment",
+            "Modify your stance",
+            "Correct your position",
+            "Improve your form",
+            "Refine your technique",
+            "Tweak your setup",
+            "Fix your posture",
+            "Straighten your back",
+            "Engage your core more",
+            "Level your shoulders",
+            "Align your hips",
+            "Square your feet",
+            "Even your balance",
+            "Center your weight",
+            "Loosen your grip",
+            "Relax your neck",
+            "Tighten your abs",
+            "Lower your shoulders",
+            "Shift your weight"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
+        },
+        "perfect": {
+          "type": "google-tts",
+          "variants": [
+            "Perfect execution!",
+            "Flawless technique!",
+            "Textbook form!",
+            "Competition ready!",
+            "Elite performance!",
+            "Masterclass motion!",
+            "Gold standard!",
+            "Impeccable control!",
+            "Precision defined!",
+            "Artistic movement!",
+            "Surgical precision!",
+            "Robot-level accuracy!",
+            "Olympic quality!",
+            "Pro-level execution!",
+            "Spotless technique!",
+            "100% perfection!",
+            "Showcase example!",
+            "Coaching manual perfect!",
+            "No notes!",
+            "Absolute ideal!"
+          ],
+          "config": {
+            "audioEncoding": "LINEAR16",
+            "effectsProfileId": ["handset-class-device"],
+            "pitch": 0,
+            "speakingRate": 0.89,
+            "voice": {
+              "languageCode": "en-US",
+              "name": "en-US-Chirp3-HD-Zephyr"
+            }
+          }
         }
-      }
-    },
-    "incorrect": {
-      "type": "google-tts",
-      "variants": [
-        "Adjust your posture",
-        "Check your alignment",
-        "Modify your stance",
-        "Correct your position",
-        "Improve your form",
-        "Refine your technique",
-        "Tweak your setup",
-        "Fix your posture",
-        "Straighten your back",
-        "Engage your core more",
-        "Level your shoulders",
-        "Align your hips",
-        "Square your feet",
-        "Even your balance",
-        "Center your weight",
-        "Loosen your grip",
-        "Relax your neck",
-        "Tighten your abs",
-        "Lower your shoulders",
-        "Shift your weight"
-      ],
-      "config": { /* Same config as above */ }
-    },
-    "perfect": {
-      "type": "google-tts",
-      "variants": [
-        "Perfect execution!",
-        "Flawless technique!",
-        "Textbook form!",
-        "Competition ready!",
-        "Elite performance!",
-        "Masterclass motion!",
-        "Gold standard!",
-        "Impeccable control!",
-        "Precision defined!",
-        "Artistic movement!",
-        "Surgical precision!",
-        "Robot-level accuracy!",
-        "Olympic quality!",
-        "Pro-level execution!",
-        "Spotless technique!",
-        "100% perfection!",
-        "Showcase example!",
-        "Coaching manual perfect!",
-        "No notes!",
-        "Absolute ideal!"
-      ],
-      "config": { /* Same config */ }
-    }
-  }
-}
-        "visual": {
-          "correct": [0, 255, 0],
-          "incorrect": [255, 0, 0]
-        }
+      },
+      "visual": {
+        "correct": [0, 255, 0],
+        "incorrect": [255, 0, 0]
       },
       "wslPaths": {
         "model": "/mnt/c/Users/Molap/Documents/work/AI-Trainer/wasm/models/hamstrings_reverse_hyper.bin"
